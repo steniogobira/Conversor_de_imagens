@@ -42,7 +42,7 @@ def arquivos_in(path):
     for arquivos in lista_arquivos:
         if os.path.isfile(arquivos):
             extensoes = arquivos.split('.')[-1]
-            if extensoes != 'py' and extensoes not in erro:
+            if extensoes not in erro:
                 if os.path.exists(os.getcwd() + '/' + extensoes):
                     os.rename(arquivos, os.getcwd() + '/' +
                               extensoes + '/' + arquivos)
