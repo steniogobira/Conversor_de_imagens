@@ -1,8 +1,9 @@
 import os
 from PIL import Image
 
-path = '\\Users\\steni\\Desktop\\TESTE\\'
+path = '/Users/gobis/Desktop/TESTE'
 erro = []
+
 
 
 def to_jpeg(path):
@@ -53,5 +54,4 @@ def arquivos_in(path):
 
 
 to_jpeg(path)
-
 arquivos_in(path)
